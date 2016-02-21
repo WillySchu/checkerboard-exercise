@@ -39,4 +39,9 @@ function Loop(){
   interval = setInterval(flash, 2000);
 }
 
+var audio = document.createElement("audio");
+audio.src = "http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga";
+audio.setAttribute("autoplay", "");
+body.appendChild(audio);
+
 Loop();
